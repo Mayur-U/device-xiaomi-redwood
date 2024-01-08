@@ -20,5 +20,8 @@ TARGET_KERNEL_CONFIG := vendor/xiaomi-qgki_defconfig vendor/redwood.config
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 113254576128
 
+# Properties
+TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+
 # Include proprietary files
 include vendor/xiaomi/redwood/BoardConfigVendor.mk
