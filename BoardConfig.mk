@@ -13,15 +13,8 @@ include device/xiaomi/sm8350-common/BoardConfigCommon.mk
 TARGET_BOOTLOADER_BOARD_NAME := redwood
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/redwood_QGKI.config
-
-# Kernel modules
-BOOT_KERNEL_MODULES := \
-    goodix_core.ko \
-    hwid.ko \
-    msm_drm.ko \
-    xiaomi_touch.ko
-BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(BOOT_KERNEL_MODULES)
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm7325
+TARGET_KERNEL_CONFIG := vendor/xiaomi-qgki_defconfig vendor/redwood.config
 
 # Partitions
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
