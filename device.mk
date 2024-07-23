@@ -8,6 +8,10 @@
 # Inherit from sm8350-common
 $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 
+# Display
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.display.idle_time=0
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
