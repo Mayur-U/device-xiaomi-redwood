@@ -5,12 +5,19 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# NFC
+TARGET_NFC_SUPPORTED_SKUS := redwood
+
 # Inherit from sm8350-common
 $(call inherit-product, device/xiaomi/sm8350-common/common.mk)
 
 # Display
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.idle_time=0
+
+# Init scripts
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.redwood.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.redwood.rc
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
