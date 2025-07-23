@@ -601,7 +601,6 @@ vendor/etc/sensors/sns_reg_config
 # Touchscreen firmware
 vendor/firmware/goodix_cfg_group_m20.bin
 vendor/firmware/goodix_firmware_m20.bin
-vendor/firmware/goodix_test_limits_255.csv
 
 # Thermal config
 vendor/etc/thermal-4k.conf
