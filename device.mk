@@ -30,9 +30,6 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    ApertureOverlayRedwood
-
-PRODUCT_PACKAGES += \
     FrameworkOverlayRedwood \
     SettingsOverlayRedwood \
     SettingsProviderOverlayRedwoodCN \
