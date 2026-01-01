@@ -22,12 +22,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=POCO/redwood_global/redwood:14/UKQ1.240624.001/OS2.0.11.0.UMSMIXM:user/release-keys \
     DeviceProduct=redwood \
     SystemName=redwood_global
-#Axion os flags
-AXION_CAMERA_REAR_INFO := 108,8,2
-AXION_CAMERA_FRONT_INFO := 16
-AXION_MAINTAINER := Mayur_U
-AXION_PROCESSOR := Snapdragon_778g
-TARGET_DISABLE_EPPE := true
-TARGET_INCLUDES_LOS_PREBUILTS := true
-TORCH_STR_SUPPORTED := true
-TARGET_ENABLE_BLUR := true
+# Exclude apps
+TARGET_DISABLE_MATLOG := true
+TARGET_EXCLUDES_AUDIOFX := true
+WITH_GMS := false
