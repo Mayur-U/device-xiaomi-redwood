@@ -18,8 +18,8 @@ PRODUCT_NAME := lineage_redwood
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="redwood_global-user 14 UKQ1.240624.001 OS2.0.13.0.UMSMIXM release-keys" \
-    BuildFingerprint=POCO/redwood_global/redwood:14/UKQ1.240624.001/OS2.0.13.0.UMSMIXM:user/release-keys \
+    BuildDesc="redwood_global-user 14 UKQ1.240624.001 OS2.0.16.0.UMSMIXM release-keys" \
+    BuildFingerprint=POCO/redwood_global/redwood:14/UKQ1.240624.001/OS2.0.16.0.UMSMIXM:user/release-keys \
     DeviceProduct=redwood \
     SystemName=redwood_global
 # Exclude apps
